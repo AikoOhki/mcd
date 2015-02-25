@@ -20,6 +20,10 @@
             android:name=".Door"
             android:label="@string/title_activity_door" >
         </activity>
+        <activity
+            android:name=".Closeet"
+            android:label="@string/title_activity_closeet" >
+        </activity>
     </application>
 
 </manifest>
