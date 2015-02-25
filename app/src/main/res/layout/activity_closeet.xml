@@ -21,7 +21,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Outer"
                 android:id="@+id/textView"
                 android:layout_weight="1" />
 
@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Tops"
                 android:id="@+id/textView2"
                 android:layout_weight="1" />
         </LinearLayout>
@@ -44,7 +44,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Dress"
                 android:id="@+id/textView3"
                 android:layout_weight="1" />
 
@@ -52,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Bottoms"
                 android:id="@+id/textView4"
                 android:layout_weight="1" />
         </LinearLayout>
@@ -67,7 +67,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Accessories"
                 android:id="@+id/textView5"
                 android:layout_weight="1" />
 
@@ -75,7 +75,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
+                android:text="Shoes"
                 android:id="@+id/textView6"
                 android:layout_weight="1" />
         </LinearLayout>
