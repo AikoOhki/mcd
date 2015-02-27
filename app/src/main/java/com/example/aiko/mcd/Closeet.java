@@ -3,11 +3,13 @@ package com.example.aiko.mcd;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.InputStream;
@@ -16,13 +18,26 @@ import java.io.InputStream;
 public class Closeet extends ActionBarActivity {
 
     private static final int REQUEST_GALLERY = 1;
-    private ImageView imageView;
+    private ImageButton imageButton;
+    ImageButton outer;
+    ImageButton tops;
+    ImageButton bottoms;
+    ImageButton dress;
+    ImageButton shoes;
+    ImageButton accessories;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_closeet);
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
+        outer = (ImageButton) findViewById(R.id.outer);
+        tops = (ImageButton) findViewById(R.id.tops);
+        bottoms = (ImageButton) findViewById(R.id.bottoms);
+        dress = (ImageButton) findViewById(R.id.dress);
+        shoes = (ImageButton) findViewById(R.id.shoes);
+        accessories = (ImageButton) findViewById(R.id.accessories);
+
     }
 
     public void outer (View v){
@@ -76,7 +91,7 @@ public class Closeet extends ActionBarActivity {
                 Bitmap image = BitmapFactory.decodeStream(input);
                 input.close();
 
-                imageView.setImageBitmap(image);
+                imageButton.setImageBitmap(image);
             } catch (Exception e) {
             }
         }

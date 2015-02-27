@@ -2,4 +2,5 @@
 <resources>
     <item name="imageView_code" type="id" />
     <item name="imageView" type="id" />
+    <item name="imageButton" type="id" />
 </resources>

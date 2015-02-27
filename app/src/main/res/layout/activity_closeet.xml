@@ -17,21 +17,19 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Outer"
-                android:id="@+id/button7"
+                android:id="@+id/outer"
                 android:layout_weight="1"
                 android:onClick="outer" />
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Tops"
-                android:id="@+id/button8"
-                android:onClick="tops"
-                android:layout_weight="1" />
+                android:id="@+id/tops"
+                android:layout_weight="1"
+                android:onClick="tops" />
 
         </LinearLayout>
 
@@ -41,19 +39,17 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Dress"
-                android:id="@+id/button9"
+                android:id="@+id/dress"
                 android:layout_weight="1"
                 android:onClick="dress" />
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Bottoms"
-                android:id="@+id/button10"
+                android:id="@+id/bottoms"
                 android:layout_weight="1"
                 android:onClick="bottoms" />
 
@@ -65,19 +61,17 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Avvessories"
-                android:id="@+id/button11"
+                android:id="@+id/accessories"
                 android:layout_weight="1"
                 android:onClick="accessories" />
 
-            <Button
+            <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="Shoes"
-                android:id="@+id/button12"
+                android:id="@+id/shoes"
                 android:layout_weight="1"
                 android:onClick="shoes" />
 
