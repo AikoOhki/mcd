@@ -18,25 +18,28 @@
             android:layout_weight="1">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Outer"
                 android:id="@+id/button"
-                android:onClick="outer" />
+                android:onClick="outer"
+                android:layout_weight="1" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Tops"
                 android:id="@+id/button2"
-                android:onClick="tops" />
+                android:onClick="tops"
+                android:layout_weight="1" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Bottoms"
                 android:id="@+id/button3"
-                android:onClick="bottoms" />
+                android:onClick="bottoms"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,25 +49,28 @@
             android:layout_weight="1">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Dress"
                 android:id="@+id/button4"
-                android:onClick="dress" />
+                android:onClick="dress"
+                android:layout_weight="1" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Shoes"
                 android:id="@+id/button5"
-                android:onClick="shoes" />
+                android:onClick="shoes"
+                android:layout_weight="1" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:text="Accessories"
                 android:id="@+id/button6"
-                android:onClick="accessories" />
+                android:onClick="accessories"
+                android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
 
