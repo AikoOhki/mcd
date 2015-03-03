@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void mcd (View v) {
-        Intent intent = new Intent(this,Door.class);
+        Intent intent = new Intent(this,Closeet.class);
         startActivity(intent);
     }
 

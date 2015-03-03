@@ -1,80 +1,142 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_haikei"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.aiko.mcd.Closeet">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <ImageButton
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/outer"
-                android:layout_weight="1"
-                android:onClick="outer" />
+                android:layout_weight="0.5"
+                android:text="What choose?"
+                android:textIsSelectable="false"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:layout_gravity="center_horizontal" />
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tops"
-                android:layout_weight="1"
-                android:onClick="tops" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="SS"
+                android:id="@+id/screenshot"
+                android:background="#00000000"
+                android:textSize="45dp"
+                android:layout_gravity="right"
+                android:onClick="ss" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="I"
+                android:id="@+id/instagram"
+                android:background="@drawable/instagram"
+                android:layout_gravity="right"
+                android:layout_weight="0.001"
+                android:onClick="instagram" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:id="@+id/cdRoot">
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/dress"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="dress" />
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/bottoms"
+                <ImageView
+                    android:id="@+id/outer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="outer"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/outer"
+                    android:background="#00000000" />
+
+                <ImageView
+                    android:id="@+id/tops"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="tops"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tops"
+                    android:background="#00000000" />
+
+                <ImageView
+                    android:id="@+id/dress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="dress"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dress"
+                    android:background="#00000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="bottoms" />
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/accessories"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="accessories"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/accessories"
+                    android:background="#00000000" />
+
+                <ImageView
+                    android:id="@+id/bottoms"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="bottoms"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bottoms"
+                    android:background="#00000000" />
+
+                <ImageView
+                    android:id="@+id/shoes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="shoes"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shoes"
+                    android:background="#00000000" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/accessories"
-                android:layout_weight="1"
-                android:onClick="accessories" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:id="@+id/shoes"
-                android:layout_weight="1"
-                android:onClick="shoes" />
-
-        </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>
