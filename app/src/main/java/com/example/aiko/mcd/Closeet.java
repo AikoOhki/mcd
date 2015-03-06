@@ -1,14 +1,15 @@
 package com.example.aiko.mcd;
 
+import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.LightingColorFilter;
-import android.net.Uri;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,14 +19,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.view.View.OnTouchListener;
-import android.widget.Toast;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 
 
 public class Closeet extends ActionBarActivity {
@@ -147,8 +145,9 @@ public class Closeet extends ActionBarActivity {
 
         bp = getViewBitmap(findViewById(R.id.cdRoot));
 
-        dateFile = new File(Environment.getExternalStorageDirectory(),
-                "MCD-" + System.currentTimeMillis() + ".png");
+        String fileName = "MCD-" + System.currentTimeMillis() + ".png";
+
+        dateFile = new File(Environment.getExternalStorageDirectory(), fileName);
 
         try {
             FileOutputStream outStream = new FileOutputStream(dateFile);
@@ -160,7 +159,16 @@ public class Closeet extends ActionBarActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        ContentValues values = new ContentValues();
+        ContentResolver contentResolver = getContentResolver();
+        values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+        values.put(MediaStore.Images.Media.TITLE, dateFile.getName());
+        values.put("_data", dateFile.getAbsolutePath());
+        contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
     }
+
 
     public void instagram(View v) {
         PackageManager pm = getPackageManager();

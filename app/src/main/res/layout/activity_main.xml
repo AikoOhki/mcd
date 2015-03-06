@@ -84,6 +84,7 @@
         android:layout_centerHorizontal="true"
         android:nestedScrollingEnabled="false"
         android:onClick="mcd"
-        android:background="@drawable/home_button" />
+        android:background="@drawable/home_button"
+        android:gravity="center_horizontal" />
 
 </RelativeLayout>
